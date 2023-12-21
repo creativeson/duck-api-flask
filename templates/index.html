@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename=theme + '.css') }}">
+</head>
+<body>
+    <!-- 切換主題按鈕 -->
+    <form action="/" method="post">
+        <button type="submit">
+            {{ 'Switch to Dark Theme' if theme == 'light' else 'Switch to Light Theme' }}
+        </button>
+    </form>
+    <h1>a website for some cute ducks</h1>
+    <p>here is your duck</p>
+    
+    <!-- 顯示鴨子圖片 -->
+    <img src="{{ pic }}" alt="Random Duck">
+
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duck website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename=theme + '.css') }}">
+</head>
+<body>
+    <form action="/" method="post">
+        <select name="theme" onchange="this.form.submit()">
+            <option value="light" {% if theme == 'light' %}selected{% endif %}>Light Theme</option>
+            <option value="dark" {% if theme == 'dark' %}selected{% endif %}>Dark Theme</option>
+        </select>
+    </form>
+
+    <h1>a website for some cute ducks</h1>
+    <p>here is your duck</p>
+    <p><img src="{{pic}}"></p>
+
+    <script>
+        // 每5秒自動刷新頁面
+        setTimeout(function() {
+            location.reload();
+        }, 5000);
+    </script>
+</body>
+</html> -->

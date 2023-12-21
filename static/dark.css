@@ -1,0 +1,79 @@
+/* 使用 CSS 來限制圖片大小 */
+img {
+    max-width: 800px; /* 最大寬度為 800 像素 */
+    max-height: 600px; /* 最大高度為 600 像素 */
+    width: auto; /* 讓圖片根據比例自動調整寬度 */
+    height: auto; /* 讓圖片根據比例自動調整高度 */
+}
+
+/* 基本頁面樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* 使用暗色背景 */
+    color: #fff; /* 使用明亮的文本颜色 */
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #555; /* 使用暗色背景 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    color: #fff; /* 使用明亮的文本颜色 */
+}
+
+p {
+    color: #ccc; /* 使用灰色文本颜色 */
+}
+
+/* 圖片樣式 */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* 頁面標題樣式 */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+}
+
+/* 頁腳樣式 */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+
+/* body {
+    background-color: #343a40;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-attachment: fixed;
+}
+
+h1{text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+p{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #000000;
+} */
